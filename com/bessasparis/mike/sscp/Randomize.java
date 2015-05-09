@@ -2,15 +2,24 @@ package com.bessasparis.mike.sscp;
 
 import java.util.*;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 
 
 public class Randomize {
 	
-	public static int random(JSONObject qObject) throws JSONException {
+	public static void main(String[] args){
 		
-		int quizLength = qObject.length();
+		int quizLength = 20;
+		
+		for (int i = 0; i < 10; i++){
+			
+			System.out.println(random(quizLength));
+			
+		}
+		
+		
+	}
+	
+	private static int random(int quizLength) {
 		
 		Random rand = new Random();
 		
