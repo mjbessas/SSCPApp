@@ -14,9 +14,7 @@ public class Randomize {
 		
 		Random rand = new Random();
 		
-		int questNum = rand.nextInt(0,quizLength);
-		
-		return questNum;
+		return rand.nextInt(quizLength);
 		
 	}
 
